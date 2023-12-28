@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D Button Example</title>
+	<style>
+		.button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 8px;
+			box-shadow: 0 4px #999;
+			transition-duration: 0.4s;
+			transform-style: preserve-3d;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+			box-shadow: 0 8px #666;
+			transform: translateY(-4px);
+		}
+		
+		.button:active {
+			background-color: #3e8e41;
+			box-shadow: 0 2px #666;
+			transform: translateY(2px);
+		}
+	</style>
+</head>
+
+<body>
+	<table id="myTable">
+		<tr>
+			<th>ID</th>
+			<th>Service</th>
+			<th>Name</th>
+		</tr>
+	</table>
+	<br>
+	<label for="id">ID:</label>
+	<input type="text" id="id">
+	<label for="service">Service:</label>
+	<input type="text" id="service">
+	<label for="name">Name:</label>
+	<input type="text" id="name">
+	<button onclick="addItem()">Add</button>
+	<button onclick="editItem()">Change</button>
+	<button onclick="deleteItem()">Delete</button>
+	
+	<script>
+		// Khởi tạo dữ liệu cho bảng
+		var data = [
+			{ id: 1, service: 'Service A', name: 'Name A' },
+			{ id: 2, service: 'Service B', name: 'Name B' },
+			{ id: 3, service: 'Service C', name: 'Name C' }
+		];
+		var table = document.getElementById("myTable");
+		
+		// Hiển thị dữ liệu lên bảng
+		for (var i = 0; i < data.length; i++) {
+			var row = table.insertRow(-1);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			cell1.innerHTML = data[i].id;
+			cell2.innerHTML = data[i].service;
+			cell3.innerHTML = data[i].name;
+		}
+		
+		// Thêm một mục mới vào bảng
+		function addItem() {
+			var id = document.getElementById("id").value;
+			var service = document.getElementById("service").value;
+			var name = document.getElementById("name").value;
+			var row = table.insertRow(-1);
+			var cell1 = row.insertCell(0);
+			var cell2 = row.insertCell(1);
+			var cell3 = row.insertCell(2);
+			cell1.innerHTML = id;
+			cell2.innerHTML = service;
+			cell3.innerHTML = name;
+		}
+		
+		// Thay đổi một mục trong bảng
+		function editItem() {
+			var id = document.getElementById("id").value;
+			var service = document.getElementById("service").value;
+			var name = document.getElementById("name").value;
+			var rows = table.getElementsByTagName("tr");
+			for (var i = 0; i < rows.length; i++) {
+				var cells = rows[i].getElementsByTagName("td");
+				if (cells.length > 0 && cells[0].innerHTML === id) {
+					cells[1].innerHTML = service;
+					cells[2].innerHTML = name;
+					break;
+				}
+			}
+		}
+		
+		// Xóa một mục khỏi bảng
+		function deleteItem() {
+			var id = document.getElementById("id").value;
+			var rows = table.getElementsByTagName("tr");
+			for (var i = 0; i < rows.length; i++) {
+				var cells = rows[i].getElementsByTagName("td");
+				if (cells.length > 0 && cells[0].innerHTML === id) {
+					table.deleteRow(i);
+					break;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
+
+

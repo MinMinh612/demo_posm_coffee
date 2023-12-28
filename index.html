@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Hướng dẫn sử dụng – GiHoTech Guide</title>
+
+    <link href="./css/_index_pagehead.css" rel="stylesheet" media="screen">
+    <link href="./css/screen-1947ba19.css" rel="stylesheet" media="screen">
+    <link href="./css/print-bccf8c07.css" rel="stylesheet" media="print">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body class="index" data-languages="[]">
+    <a href="#" id="nav-button"></a>
+    <div id="ght-toc-wrapper" class="toc-wrapper">
+        <!-- Wrapper Search - Logo - Version -->
+        <span class="ght-version-title">
+            Version: 2320-08-03-4712
+        </span>
+        <img src="./assets/ght_logo.png" class="ght-logo" alt="Logo">
+        <div class="search">
+            <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+        <!-------------------------------------->
+        <ul id="toc" class="toc-list-h1">
+            <li id="toc-ght-module-site"></li>
+        </ul>
+    </div>
+
+    <div id="ght-page-wrapper" class="page-wrapper">
+        <div id="ght-wrapper-content-site" class="content"></div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        // Nav button if medium or small size screen
+        $('#nav-button').load('./_index_navbutton.html')
+        // Load Nav Head Info: Version, Logo, SearchBar
+        // Mã phiên bản: < 2 số cuối năm - 2 số đầu năm > -<ngày>-<tháng>-<phút giờ >
+        //$('#ght-toc-wrapper').load('./_index_togwrapper_logovs.html')
+        //$('#ght-page-wrapper').load('./_index_pagewrapper.html')
+
+        $('#toc-ght-module-site').load('./_page/_index_nav.html')
+        $('#ght-wrapper-content-site').load('./_page/_index_wrapcontent.html', function () {
+            reload_js('./js/all-721d054c.js');
+        })
+
+        function reload_js(src) {
+            $('script[src="' + src + '"]').remove();
+            $('<script>').attr('src', src).appendTo('head');
+        }
+    });
+</script>

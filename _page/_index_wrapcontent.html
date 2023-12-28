@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<!------------------------- D:\GHT_POSM_CAFESHOP\GHT_POSM\_page\image > ------------------------------------->
+
+<html>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        line-height: 1.0;
+    }
+
+    h2 {
+        color: red;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    h3 {
+        color: red;
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    table {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+    }
+
+    .zoom {
+        transition: transform 0.2s;
+        transform-origin: center center;
+    }
+
+    .zoom:hover {
+        transform: scale(1.2);
+    }
+
+    .image-button {
+        display: inline-block;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        background: none;
+        vertical-align: middle;
+    }
+
+    .image-button img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .image-button:focus {
+        outline: none;
+    }
+
+    .image-button:active {
+        transform: translateY(1px);
+    }
+</style>
+<h1 id="pos">Hướng dẫn sử dụng</h1>
+
+<body>
+
+    <p style="font-size: 24px;"><strong>Giao diện chính.</br>
+            (Chương trình xem tốt nhất ở độ phân giải 1024x768 trở lên)</strong>
+    </p>
+    <p>
+        <img id="main" src="./_page/image/main.jpg" alt="main" width="400" height="300">
+
+    </p>
+    <!-------------------------Hệ thống ------------------------------------->
+
+    <h2 id="system" class="h2red">1. Hệ thống</h2>
+    <ul>
+        <li>Đăng nhập hệ thống</li>
+    </ul>
+    <p>
+        <img id="login" src="./_page/image/login.jpg" alt="login" width="400" height="300">
+    </p>
+    <ul>
+        - Để thiết lập kết nối với máy chủ thì chúng ta phải có User và Pasword trên máy chủ. Phần này do IT trong công
+        ty phụ trách.
+    </ul>
+    <ul>
+        <li>Quản lý danh sách người dùng (User List):</li>
+    </ul>
+    <p>
+        <img src="./_page/image/userlist.jpg" alt="userlist" width="600" height="400">
+
+    </p>
+    <ul style="font-weight:bold">*Phân quyền quản lý khu vực:</ul>
+    <ul>Click vào user muốn phận quyền sẽ hiển thị bảng sau:</ul>
+    <p>
+        <img src="./_page/image/author.jpg" alt="author" width="600" height="400">
+    </p>
+    <ul>(1): Tick chọn khu vực Quản lý</ul>
+    <ul>(2): Nhấn Lưu</ul>
+    <ul style="font-weight:bold">*Phân quyền người dùng:</ul>
+    <p>
+        <img src="./_page/image/author_choosesys.jpg" alt="author_choosesys" width="600" height="400">
+    </p>
+    <ul>(1): Chọn user muốn phân quyền</ul>
+    <ul>(2): Tick chọn Xem, Thêm, Xóa, Sửa để phân quyền cho chức năng đó.</ul>
+    <p>
+        <img src="./_page/image/author_choosesys1.jpg" alt="author_choosesys1" width="600" height="400">
+    </p>
+    <ul>Chọn để phân quyền các chức năng cho user.</ul>
+    <p>
+        <img src="./_page/image/author_report.jpg" alt="author_report" width="600" height="400">
+    </p>
+    <ul>Chọn “Reports” để phân các quyền liên quan đến báo cáo cho user.</ul>
+    <ul>- Tạo mới người dùng:</ul>
+    <ul style="margin-left:20px"> + Bấm nút <img src="./_page/image/author_create.jpg" alt="author_create"> ta được giao
+        diện như sau:</ul>
+    <p>
+        <img src="./_page/image/author_create_main.jpg" alt="author_create_main" width="600" height="400">
+    </p>
+    <ul style="margin-left:20px">+ Nhập đầy đủ thông tin và nhấn <img class="image-button"
+            src="./_page/image/author_save.jpg" alt="author_save"> để thêm người dùng mới.</ul>
+    <h3 id="change_password" class="h2red">a. Thay đổi mật khẩu</h3>
+    <ul>Tất cả các người sử dụng hệ thống đều có một tài khoản và mật khẩu riêng.</ul>
+    <ul>- Thay đổi mật khẩu:</ul>
+    <ul style="margin-left: 25px;">+ Để thay đổi mật khẩu bạn chọn vào mục Hệ thống =>Thay đổi mật khẩu</ul>
+    <ul style="margin-left: 25px;">+ Khi thay đổi mật khẩu bạn cần phải nhập mật khẩu cũ. Nhấn Lưu để lưu thay đổi.</ul>
+    <p>
+        <img src="./_page/image/change_password.jpg" alt="change_password" width="600" height="400">
+    </p>
+    <h3 id="access_log" class="h2red">b. Nhật kí truy cập</h3>
+    <p>
+        <img src="./_page/image/main_access_log.jpg" alt="main_access_log" width="600" height="400">
+    </p>
+    <ul style="margin-left: 20px;">- Để kiểm tra chi tiết: </ul>
+    <p>
+        <img src="./_page/image/show_access_log.jpg" alt="show_access_log" width="600" height="400">
+    </p>
+    <ul>Ta được màn hình chi tiết như sau:</ul>
+    <p>
+        <img src="./_page/image/result_access_log.jpg" alt="result_access_log" width="600" height="400">
+    </p>
+
+    <!-------------------------Cấu hình ------------------------------------->
+
+    <h2 id="configuration" class="h2red">2. Cấu hình</h2>
+    <h3 id="set_up_sales_department" class="h2red">a. Thiết lập bộ phận bán hàng</h3>
+    <p>
+        <img src="./_page/image/outlet_establish.jpg" alt="outlet_establish" width="600" height="400">
+    </p>
+    <ul> Thiết lập Khu vực, Bộ phận bán hàng và máy in tương ứng với từng khu vực.</ul>
+    <p>
+        <img src="./_page/image/area_establish.jpg" alt="area_establish" width="600" height="400">
+    </p>
+    <!-- <h3 id="table_establish" class="h2red">b. Thiết lập bàn</h3>
+    <ul>- Có 2 cách để thêm bàn:</ul>
+    <ul>+ Cách 1: Thêm từng bàn</ul>
+    <img src="./_page/image/add_table_way1.png" alt="add_table_way1" width="600" height="400">
+    <ul>+ Cách 2: Thêm bàn tự động theo thứ tự</ul>
+    <img src="./_page/image/add_table_way2.png" alt="add_table_way2" width="600" height="400">
+    <ul>Cách xóa bàn:</ul>
+    <ul>Xóa từng bàn: Tại giao diện Thiết lập bàn ta chọn nhà hàng và khu vực cần xóa bàn. Sau đó click chuột phải vào
+        bàn cần xóa và chọn “Xóa bàn”. </ul>
+    <img src="./_page/image/delete_table_way1.png" alt="delete_table_way1" width="600" height="400">
+    <ul>Nhấn “Chấp nhận” để xóa bàn.</ul> -->
+    <!-------------------------Danh mục ------------------------------------->
+    <h2 id="category" class="h2red">3. Danh mục</h2>
+    <h3 id="item_group" class="h2red">a. Danh mục nhóm hàng hóa/dịch vụ:</h3>
+    <ul>Danh mục -> Danh mục nhóm hàng hóa/ dịch vụ</ul>
+    <p>
+        <img src="./_page/image/item_group.jpg" alt="item_group" width="600" height="400">
+    </p>
+    <!-- <ul>Nhập mã, tên Tiếng Việt, tiếng Anh xuống dòng thông tin sẽ tự lưu</ul> -->
+    <h3 id="item_type" class="h2red">b. Danh mục loại hàng hóa/dịch vụ:</h3>
+    <ul>Danh mục -> Danh mục loại hàng hóa/ dịch vụ</ul>
+    <p>
+        <img src="./_page/image/item_type.jpg" alt="item_type" width="600" height="400">
+    </p>
+    <ul>- Để thêm Loại hàng hóa/dịch vụ ta nhấn nút <img src="./_page/image/btn_add.jpg"> ta được màn hình
+        sau:</ul>
+    <p>
+        <img src="./_page/image/add_item_type.jpg" alt="add_item_type" width="600" height="400">
+    </p>
+    <ul> Chọn tên nhóm, Tên loại <img class="image-button" src="./_page/image/btn_save_itemtype.jpg"> để thêm mới nhóm
+        hàng hóa / dịch vụ.
+
+    </ul>
+    <ul>- Để xem chi tiết Loại hàng hóa/dịch vụ ta chọn dòng muốn xem chi tiết và nhấn <img class="img-btn-detail"
+            src="./_page/image/btn_detail_itemtype.jpg"> hoặc double click vào dòng đó.</ul>
+    <ul>- Để Xóa Loại hàng hóa/dịch vụ ta nhấn <img class="image-button" src="./_page/image/btn_edit_itemtype.jpg" />
+        rồi
+        nhấn <img class="image-button" src="./_page/image/btn_delete_itemtype.jpg"> Sau đó chọn "Có" <img width="600"
+            height="400" src="./_page/image/confirm_delete_item_type.jpg"> </ul>
+    <h3 id="details_item_type" class="h2red">c. Danh mục chi tiết hàng hóa/ món ăn/ dịch vụ:</h3>
+    <ul>Danh mục -> Danh mục chi tiết hàng hóa/ món ăn/ dịch vụ</ul>
+    <p>
+        <img src="./_page/image/detail_item_type.jpg" alt="detail_item_type" width="600" height="400">
+    </p>
+    <ul>Có thể “Thêm chi tiết thực đơn/ hàng hóa/ dịch vụ” ở giao diện này khi nhấn nút “Thêm”
+        <h3 id="menu_organize" class="h2red">d. Tổ chức thực đơn:</h3>
+        <p>- Mục đích của khai báo menu là dùng để tạo các bộ menu bán hàng linh động cho từng outlet.</p>
+        <ul>- Để thêm Nhóm thực đơn mới ta nhấn nút <img src="./_page/image/btn_add.jpg"> :</ul>
+
+        <img src="./_page/image/add_menu.jpg" alt="add_menu" width="600" height="400">
+        <ul>
+            <p>
+                (1) Chọn nhóm hàng hóa / dịch vụ</br>
+                (2) Chọn loại hàng hóa /dịch vụ </br>
+                (3) Nhập tên món </br>
+                (4) Chọn đơn vị tính</br>
+                (5) Nhập giá để có thể áp dụng cho các điểm bán hàng.
+            <ul>
+                <p>
+                    Lưu ý: </br>
+                    Nếu tick vào ô sử dụng thì món mới có thể được bán.</br>
+                    Giá được nhập ở mục số 5 đã bao gồm thuế và phí phục vụ.</br>
+                    Nếu tick vào ô "Áp dụng giá tất cả điểm bán hàng" thì sau khi bấm "Lưu" sẽ áp dụng giá cho toàn bộ
+                    điểm bán hàng.
+                </p>
+            </ul>
+
+            Nhấn <img class="image-button" src="./_page/image/btn_save_menu.jpg"> để Lưu lại. Nhấn "Sửa" để cập nhật.
+            Nhấn "Sửa" sau đó
+            nhấn "xóa" để xóa nhóm thực đơn.
+            </p>
+        </ul>
+        <ul>
+            <strong> Nếu không tick vào ô "Áp dụng giá tất cả điểm bán hàng" thì sau khi bấm "Lưu" sẽ xuất hiện giao
+                diện chọn
+                điểm bán hàng.
+            </strong>
+        </ul>
+        <p>
+            <img src="./_page/image/choose_outlet_menu.jpg" alt="choose_outlet_menu" width="600" height="400" />
+        </p>
+        <ul>
+            Chọn khu vực bán hàng cần đưa món vào sau đó bấm "Đồng ý" <img class="image-button"
+                src="./_page/image/btn_accept_outlet.jpg">
+        </ul>
+        <ul>- Để xem chi tiết thực đơn/hàng hóa/dịch vụ ta chọn dòng muốn xem chi tiết và nhấn <img class="image-button"
+                src="./_page/image/btn_detail_itemtype.jpg"> hoặc double click vào dòng đó.</ul>
+        <ul>
+            <strong>
+                <p>
+                    *Có 2 cách sửa giá thực đơn/hàng hóa/dịch vụ: </br>
+                    Cách 1: Áp dụng cho 1 hoặc từ 2 hay nhiều điểm bán hàng trở lên.</br>
+                    Chọn thực đơn/hàng hóa/dịch vụ cần sửa giá => Chọn "Sửa" => Sửa lại giá ở ô giá như hình (1) => Bấm
+                    "Lưu"</br>
+                    <img src="./_page/image/edit_price_menu_1.jpg" alt="edit_price_menu_1" width="600"
+                        height="400" /></br>
+                    Sau đó bấm "Thêm điểm bán hàng & Cập nhập giá"(2) để áp dụng cho nhiều điểm bán hàng. Ta sẽ được
+                    giao diện bên dưới</br>
+                    <img src="./_page/image/choose_outlet_menu.jpg" alt="choose_outlet_menu" width="600"
+                        height="400" /></br>
+                    Chọn khu vực bán hàng cần đưa món vào sau đó bấm "Đồng ý" <img class="image-button"
+                        src="./_page/image/btn_accept_outlet.jpg"></br>
+                    ***Lưu ý: Nếu tích vào các điểm bán hàng chưa bán thực đơn/hàng hóa/dịch vụ => Điểm bán hàng đó sẽ
+                    được bán thực đơn/hàng hóa/dịch vụ này với giá đúng với giá đã nhập bên trên.</br></br>
+                    Cách 2: Áp dụng cho một 1 điểm bán hàng</br>
+                    Chọn dòng có điểm bán hàng cần sửa giá => Nhập giá mới ở cột "Giá bán"</br>
+                    <img src="./_page/image/edit_price_menu_2.jpg" alt="edit_price_menu_2" width="600"
+                        height="400" /></br>
+                    Sau đó bấm sang dòng khác => Chọn "Có" để cập nhập giá mới cho thực đơn/hàng hóa/dịch vụ</br>
+                    <img src="./_page/image/confirm_price_menu_2.jpg" alt="confirm_price_menu_2" width="600"
+                        height="400" /></br>
+                </p>
+            </strong>
+        </ul>
+        <h3 id="unit_list" class="h2red">e. Danh mục đơn vị tính</h3>
+        <p>
+            <img src="./_page/image/unit_list.jpg" alt="unit_list" width="600" height="400">
+        </p>
+        <h3 id="dish_notes_list" class="h2red">f. Danh mục ghi chú món </h3>
+        <p>
+            <img src="./_page/image/dish_notes_list.jpg" alt="dish_notes_list" width="600" height="400">
+        </p>
+        <ul>
+            Để thêm ghi chú mới => Nhập tên vào dòng cuối cùng của danh sách.</br>
+            Nếu muốn sử dụng ngay thì tick vào ô sử
+            dụng =>
+            Bấm qua 1 dòng khác để lưu.</br>
+            Để không sử dụng ghi chú nào => Bỏ tick vào ô sử dụng
+        </ul>
+        <h3 id="currency_list" class="h2red">g. Danh mục tiền tệ</h3>
+        <p>
+            <img src="./_page/image/currency_list.jpg" alt="currency_list" width="600" height="400">
+        </p>
+        <h3 id="discount_list" class="h2red">h. Danh mục chiết khấu</h3>
+        <p>
+            <img src="./_page/image/discount_list.jpg" alt="discount_list" width="600" height="400">
+        </p>
+
+        <!-------------------------Khách hàng ------------------------------------->
+        <h2 id="customer" class="h2red">4. Khách hàng</h2>
+        <ul>
+            Chọn Khách hàng => Bấm "Lấy lại dữ liệu"</br>
+        </ul>
+        <p>
+            <img src="./_page/image/customer.jpg" alt="customer" width="600" height="400">
+        </p>
+        <ul>
+            Bấm <img src="./_page/image/btn_add_customer.jpg" /> để thêm mới khách hàng</br>
+            <img src="./_page/image/add_customer.jpg" width="600" height="400" /></br>
+            Nhập các thông tin cần thiết vào => Sau đó bấm "Lưu"</br>
+            <strong>
+                Các mục có dấu <span style="color: red">*</span> là bắt buộc
+            </strong>
+        </ul>
+        <ul>- Để xem chi tiết Loại hàng hóa/dịch vụ ta chọn dòng muốn xem chi tiết và nhấn <img class="image-button"
+                src="./_page/image/btn_detail_itemtype.jpg"> hoặc double click vào dòng đó.</ul>
+        <ul>- Để Xóa Loại hàng hóa/dịch vụ ta nhấn <img class="image-button"
+                src="./_page/image/btn_edit_itemtype.jpg" />
+            rồi nhấn <img class="image-button" src="./_page/image/btn_delete_itemtype.jpg"> Sau đó chọn "Có" <img
+                src="./_page/image/confirm_delete_customer.jpg" width="600" height="400"> </ul>
+        <!-------------------------Sơ đồ bàn ------------------------------------->
+        <h2 id="table_map" class="h2red">5. Sơ đồ bàn</h2>
+        <ul>- Để xem danh sách các bàn</ul>
+        <p>
+            <img src="./_page/image/table_map.jpg" alt="table_map" width="600" height="400">
+        </p>
+        <ul>
+            (1): Địa điểm bán hàng</br>
+            (2): Khu vực bán hàng</br>
+            (3): Nhấn chọn bàn để mở bàn</br>
+            - Để sử dụng post món ăn
+        </ul>
+
+        <ul style="margin-left: 20px;">+ Sau khi nhấn chọn bàn ta có màn hình sau:</ul>
+        <p>
+            <img src="./_page/image/step_post_food.jpg" alt="step_post_food" width="600" height="400">
+        </p>
+        <ul>
+            (1) Danh sách các loại hàng hóa</br>
+            (2) Danh sách các món ăn thuộc các loại hàng hóa tương tự</br></br>
+            Chọn 1 món cần thêm => Hệ thống hiển thị màn hình nhập số lượng như bên dưới</br>
+            <img src="./_page/image/adjust_quantity_order.jpg" alt="adjust_quantity_order" width="600" height="400">
+            </br></br>
+            Sau đó hập số lượng theo yêu cầu => Khi thêm thành công ta sẽ được màn hình sau </br></br>
+            <img src="./_page/image/add_in_note.jpg" alt="adjust_quantity_order" width="600" height="400"></br></br>
+            (1): Khi bấm vào sẽ xuất hiện màn hình ghi chú món đó.</br></br>
+            <img src="./_page/image/add_note_to.jpg" alt="adjust_quantity_order" width="600" height="400"></br></br>
+            Tick vào ô chọn sau đó bấm "Đồng ý" <img class="image-button"
+                src="./_page/image/btn_accept_outlet.jpg"></br>
+            (2): Khi bấm vào sẽ xuất hiện màn hình thêm món phụ vào.</br></br>
+            <img src="./_page/image/add_topping.jpg" alt="add_topping" width="600" height="400"></br></br>
+            Chọn loại hàng hóa ở (1) xong sau đó chọn tên món cần thêm ở (2) có thể tăng số lượng theo yêu cầu.</br>
+            Sau khi thực hiện thêm món phụ và ghi chú sẽ được màn hình như bên dưới.</br>
+            <img src="./_page/image/result_post_menu.jpg" alt="add_topping" width="600" height="400"></br>
+        </ul>
+        <ul>
+            Để in pha chế / bếp => Chọn "IN PHA CHẾ/BẾP"</br>
+            Để gộp bàn => Chọn "GỘP BÀN" => Sẽ được giao diện sau</br>
+            <img src="./_page/image/combine_table.jpg" alt="add_topping" width="600" height="400"></br>
+            Nhập số lượng các món cần gộp ở mục (1)</br>
+            Chọn khu vực cần gộp ở mục (2)</br>
+            Chọn số bàn cần gộp ở mục (3)</br>
+            Sau đó nhấn vào nút ở (4)</br>
+            Để chuyển bàn => Chọn "CHUYỂN BÀN" => Sẽ hiển thị giao diện chuyển bàn</br>
+            <img src="./_page/image/table_transfer.jpg" alt="add_topping" width="600" height="400"></br>
+            Click vào bàn cần chuyển sau đó bấm <img class="image-button"
+                src="./_page/image/btn_table_transfer.jpg" /></br>
+            Để tách phiếu (bill) => Chọn "TÁCH PHIẾU" => Sẽ hiển thị giao diện tách phiếu</br>
+            <img src="./_page/image/split_bill.jpg" alt="split_bill" width="600" height="400"></br>
+            Nhập số lượng phiếu cần tách ở mục (1) </br>
+            Nếu số lượng phiếu tách là 1 thì phải nhập số lượng món cần tách ở mục 2 => Bấm "Tách"<img
+                class="image-button" src="./_page/image/btn_split_bill.jpg" /> </br>
+            Nếu nhập số lượng phiếu tách >= 2 thì số lượng các món sẽ được chia đều => Bấm "Tách" <img
+                class="image-button" src="./_page/image/btn_split_bill.jpg" /> </br></br>
+            Để in phiếu (bill) => Chọn "IN PHIẾU"</br></br>
+            Để thanh toán => Chọn "THANH TOÁN"</br>
+            <img src="./_page/image/payment_bill.jpg" width="600" height="400" /> </br>
+            Chọn hình thức thanh toán xong bấm "THANH TOÁN" .</br>
+            Số tiền cần thanh toán = 0 thì sẽ tự động trả về màn hình sơ đồ bàn và đóng bill </br>
+        </ul>
+        <h2 id="stalls" class="h2red">6. Quầy hàng</h2>
+        <ul>
+            Đối với bộ phận Take Away => Chọn "QUẦY HÀNG" chúng ta sẽ được giao diện sau
+        </ul>
+        <p>
+            <img src="./_page/image/stalls.jpg" alt="stalls" width="600" height="400">
+        </p>
+        <ul>
+            Chọn trạng thái để lấy danh sách hóa đơn theo trạng thái đã lọc (1)</br>
+            Chọn khoảng thời gian để lấy danh sách hóa đơn (2)</br>
+            Bấm "Lấy dữ liệu" (3) để lấy danh sách hóa đơn hợp lệ </br>
+            Sau khi bấm "Lấy dữ liệu" sẽ được giao diện bên dưới </br>
+            <img src="./_page/image/list_orders.jpg" alt="list_orders" width="600" height="400"></br>
+            Bấm "Bán hàng" <img src="./_page/image/btn_sell.jpg" class="image-button"> để thêm mới</br>
+            Xuất hiện giao diện báng hàng như sau </br>
+            <img src="./_page/image/purchasing_cf.jpg" alt="purchasing_cf" width="600" height="400" /></br>
+            (1) Danh sách các loại hàng hóa</br>
+            (2) Danh sách các món ăn thuộc các loại hàng hóa tương tự</br></br>
+            Chọn 1 món cần thêm => Hệ thống hiển thị màn hình nhập số lượng như bên dưới</br>
+            <img src="./_page/image/adjust_quantity_order_pur.jpg" alt="adjust_quantity_order_pur" width="600"
+                height="400">
+            </br></br>
+            Sau đó hập số lượng theo yêu cầu => Khi thêm thành công ta sẽ được màn hình sau </br></br>
+            <img src="./_page/image/add_in_note_pur.jpg" alt="add_in_note_pur" width="600" height="400"></br></br>
+            (1): Khi bấm vào sẽ xuất hiện màn hình ghi chú món đó.</br></br>
+            <img src="./_page/image/add_note_to.jpg" alt="adjust_quantity_order" width="600" height="400"></br></br>
+            Tick vào ô chọn sau đó bấm "Đồng ý" <img class="image-button"
+                src="./_page/image/btn_accept_outlet.jpg"></br>
+            (2): Khi bấm vào sẽ xuất hiện màn hình thêm món phụ vào.</br></br>
+            <img src="./_page/image/add_topping.jpg" alt="add_topping" width="600" height="400"></br></br>
+            Chọn loại hàng hóa ở (1) xong sau đó chọn tên món cần thêm ở (2) có thể tăng số lượng theo yêu cầu.</br>
+            Sau khi thực hiện thêm món phụ và ghi chú sẽ được màn hình như bên dưới.</br>
+            <img src="./_page/image/result_post_menu_pur.jpg" alt="result_post_menu_pur" width="600"
+                height="400"></br></br>
+        </ul>
+        <ul>
+            Để in phiếu => Chọn "IN PHIẾU"</br></br>
+            Sau khi bấm "THANH TOÁN" sẽ được màn hình bên dưới</br>
+            <img src="./_page/image/payment_bill.jpg" width="600" height="400" /> </br>
+            Chọn hình thức thanh toán xong bấm "THANH TOÁN" .</br></br>
+            Số tiền cần thanh toán = 0 thì sẽ tự động trả về màn hình sơ đồ bàn và đóng bill </br>
+        </ul>
+        <h2 id="search" class="h2red">7. Tra cứu</h2>
+        <h3 id="search_bill" class="h2red">a. Tra cứu thông tin hóa đơn bán hàng:</h3>
+        <p>
+            <img src="./_page/image/search_bill.jpg" alt="table_map" width="600" height="400">
+        </p>
+        <ul>
+            Chọn trạng thái của hóa đơn ở mục (1)</br>
+            Chọn ngày ở mục (2)</br>
+            Chọn bộ phận bán hàng ở mục (3)</br>
+            Sau đó bấm "Lấy dữ liệu" (4) </br>
+            Xuất hiện danh sách hóa đơn theo điều kiện đã được chọn ở trên</br>
+        </ul>
+        <p>
+            <img src="./_page/image/list_orders_fillter.jpg" alt="list_orders_fillter" width="600" height="400">
+        </p>
+        <ul>
+            Để xem chi tiết hóa đơn ta chọn dòng muốn xem chi tiết và nhấn <img class="image-button"
+                src="./_page/image/btn_detail_itemtype.jpg"> hoặc double click vào dòng đó. </br>
+            Ngoài ra có thể kết xuất ra file excel khi nhấn vào "Kết xuất Excel"
+        </ul>
+        <h3 id="search_payment" class="h2red">b. Tra cứu thanh toán:</h3>
+        <p>
+            <img src="./_page/image/search_payment.jpg" alt="search_payment" width="600" height="400"></br>
+        </p>
+        <ul>
+            Chọn ngày cần tìm sau đó bấm "Lấy dữ liệu" sẽ được giao diện bên dưới <br /></br>
+        </ul>
+        <p>
+            <img src="./_page/image/list_payment.jpg" alt="list_payment" width="600" height="400"></br>
+        </p>
+        <ul>
+            Để xem chi tiết thanh toán ta chọn dòng muốn xem chi tiết và nhấn "Xem chi tiết" hoặc double click vào dòng
+            đó.
+            </br></br>
+            Ngoài ra có thể kết xuất ra file excel khi nhấn vào "Kết xuất Excel"
+        </ul>
+        <h2 id="report-statistical" class="h2red">8. Báo cáo - Thống kê</h2>
+        <h3 id="report_cashier_general" class="h2red">a. Báo cáo thu ngân/ thanh toán (Bảng kê tổng hợp)</h3>
+        <p>
+            <img src="./_page/image/report_cashier_general.jpg" alt="report_cashier_general" width="600"
+                height="400"></br>
+        </p>
+        <h3 id="report_cashier_detail_paymentsbygroup" class="h2red">b. Báo cáo thu ngân/ thanh toán (Báo cáo chi tiết
+            hình
+            thức thanh
+            toán theo nhóm)</h3>
+        <p>
+            <img src="./_page/image/report_cashier_detail_paymentsbygroup.jpg"
+                alt="report_cashier_detail_paymentsbygroup" width="600" height="400"></br>
+        </p>
+        <h3 id="report_cashier_detail_payments" class="h2red">c. Báo cáo thu ngân/ thanh toán (Báo cáo chi tiết
+            hình
+            thức thanh
+            toán)</h3>
+        <p>
+            <img src="./_page/image/report_cashier_detail_payments.jpg" alt="report_cashier_detail_payments" width="600"
+                height="400"></br>
+        </p>
+        <h3 id="report_cashier_collect_money" class="h2red">d. Báo cáo thu ngân/ thanh toán (Báo cáo thu tiền theo thu
+            ngân)</h3>
+        <p>
+            <img src="./_page/image/report_cashier_collect_money.jpg" alt="report_cashier_collect_money" width="600"
+                height="400"></br>
+        </p>
+        <h3 id="report_cashier_collect_money_a7" class="h2red">e. Báo cáo thu ngân/ thanh toán (Báo cáo thu tiền theo
+            thu
+            ngân A7)</h3>
+        <p>
+            <img src="./_page/image/report_cashier_collect_money_a7.jpg" alt="report_cashier_collect_money_a7"
+                width="600" height="400"></br>
+        </p>
+</body>
+
+
+<style>
+    .wrap-content-crs-table-01 td {
+        padding: 5px !important;
+        color: black;
+    }
+
+    .wrap-content-crs-table-01 tr {
+        border-bottom: none !important;
+    }
+
+    .wrap-content-p-purpose {
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .wrap-content-p-path {
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .text-underline {
+        text-decoration: underline;
+    }
+
+    .text-italic {
+        font-style: italic;
+    }
+
+    .wrap-content-p {
+        color: black;
+    }
+
+    .wrap-content-tab-padding {
+        padding-left: 50px;
+    }
+
+    .wrap-content-ul01 {
+        list-style-type: circle;
+        list-style-position: inside;
+        color: black;
+    }
+
+    .wrap-content-ul-title {
+        font-weight: bold;
+    }
+
+    .wrap-content-ul02 {
+        list-style-type: square;
+        list-style-position: inside;
+        color: black;
+    }
+
+    .wrap-content-ul03 {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        color: black;
+    }
+
+    .wrap-content-ul03 li {
+        padding-left: 1em;
+        text-indent: 1em;
+    }
+
+    .wrap-content-ul03 li:before {
+        content: "-";
+        padding-right: 5px;
+    }
+
+    .wrap-content-ul04 {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+        color: black;
+    }
+
+    .wrap-content-ul04 li {
+        padding-left: 1em;
+        text-indent: 1em;
+    }
+
+    .wrap-content-ul04 li:before {
+        content: "+";
+        padding-right: 5px;
+    }
+</style>
+
+</html>
